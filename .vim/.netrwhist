@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/ronald/releases/gem/0.1/application'
+let g:netrw_dirhist_2='/home/ronald/websites/pharmaknowledge/modules'
+let g:netrw_dirhist_3='/home/ronald/releases/gem/0.1/application/modules'
+let g:netrw_dirhist_4='/home/ronald/releases/gem/0.1/library/Lib/Model/DbTable'
+let g:netrw_dirhist_5='/home/ronald/websites/oudermatch/templates/invoices'
+let g:netrw_dirhist_6='/home/ronald/websites/buitenreclame/custom/cms/views/scripts/volumeindexes-instances'
+let g:netrw_dirhist_7='/home/ronald/websites/advertentiegroothandel/.git'
+let g:netrw_dirhist_8='/home/ronald/websites/buitenreclame/calculators'

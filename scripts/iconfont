@@ -1,0 +1,14 @@
+#!/bin/bash
+rm /home/ivo/releases/gem/0.1-layout/public/font/icons/icomoon.dev.svg
+rm /home/ivo/releases/gem/0.1-layout/public/font/icons/icomoon.eot
+rm /home/ivo/releases/gem/0.1-layout/public/font/icons/icomoon.svg
+rm /home/ivo/releases/gem/0.1-layout/public/font/icons/icomoon.ttf
+rm /home/ivo/releases/gem/0.1-layout/public/font/icons/icomoon.woff
+
+extract /home/ivo/releases/gem/0.1-layout/public/font/icons/icomoon*.zip
+rm /home/ivo/releases/gem/0.1-layout/public/font/icons/icomoon*.zip
+
+mv /home/ivo/releases/gem/0.1-layout/public/font/icons/icomoon*/fonts/* /home/ivo/releases/gem/0.1-layout/public/font/icons/
+cat /home/ivo/releases/gem/0.1-layout/public/font/icons/icomoon*/style.css
+rm -rf /home/ivo/releases/gem/0.1-layout/public/font/icons/icomoon*/*
+rmdir /home/ivo/releases/gem/0.1-layout/public/font/icons/icomoon*/

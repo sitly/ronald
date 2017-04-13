@@ -1,0 +1,23 @@
+#!/bin/bash
+
+read -p "database name: " database_name
+read -p "db user: " username
+stty -echo
+read -p "db password: " password; echo
+stty echo
+
+host="localhost"
+
+dump=`mysqldump --user $username --password=$password $database_name`
+dump=`sed -r 's/\/\*!50013 DEFINER=\`[a-z]+\`@\`[a-z]+\` SQL SECURITY DEFINER \*\///g' <<< "$dump"`
+
+echo $dump
+
+#mysql --user $targetuser --password=$targetpass --host=$host<<EOFMYSQL
+#CREATE DATABASE $target;
+#USE $target;
+#$dump
+#UPDATE cms_websites SET website_code = '$target',
+#website_name = '$target'
+#WHERE cms_websites.website_id =1 LIMIT 1 ;
+#EOFMYSQL

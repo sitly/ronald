@@ -1,0 +1,19 @@
+{
+    "browser": true,
+    "undef":  true,
+    "unused": true,
+    "debug" : false,
+    "devel" : true,
+    "strict" : false,
+    "predef": [
+        "$",
+        "_",
+        "Backbone",
+        "define",
+        "require",
+        "Storage"
+    ],
+    "curly" : false,
+    "boss" : true
+
+}

@@ -1,0 +1,10 @@
+#!/bin/bash
+script=$1;
+read -p "database name: " database_name
+read -p "db user: " username
+stty -echo
+read -p "db password: " password; echo
+stty echo
+
+mysql --user=$username --password=$password $database_name < $script
+echo 'done!'
